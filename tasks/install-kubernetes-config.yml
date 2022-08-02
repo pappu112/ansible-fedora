@@ -11,10 +11,10 @@
   shell: touch /etc/systemd/zram-generator.conf
 - name: switch to Cgroup v1
   shell: cp /home/grub /etc/default/grub
-# - name: disable sy7stemd and firewalled
-#   shell: |
-#       systemctl disable --now firewalld
-#       systemctl disable --now systemd-resolved
+- name: disable sy7stemd and firewalled
+  shell: |
+      systemctl disable --now firewalld
+      systemctl disable --now systemd-resolved
 - name : configure network
   shell: |
       cp /home/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
