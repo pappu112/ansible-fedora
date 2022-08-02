@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: mlflow-pod
-        image: mlflow
-        imagePullPolicy: Never
+        image: pappu112/mlflow
+        imagePullPolicy: Always
         env:
           - name: AWS_ACCESS_KEY_ID
             valueFrom:

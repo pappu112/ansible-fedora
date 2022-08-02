@@ -4,9 +4,12 @@
   connection: local 
   become: true
   tasks:
-    # - include_tasks: tasks/install-kubernetes-config.yml
+    - include_tasks: tasks/install-kubernetes-config.yml
     # - include_tasks: tasks/install-kubernetes.yml
     # - include_tasks: tasks/install-helm.yml
     # - include_tasks: tasks/install-podman.yml
     # - include_tasks: tasks/install-registry.yml
-    - include_tasks: tasks/install-gitlab.yml
+    # - include_tasks: tasks/install-gitlab.yml
+    # - include_tasks: tasks/install-minio.yml
+    # - include_tasks: tasks/install-sql.yml
+    # - include_tasks: tasks/install-mlflow.yml
