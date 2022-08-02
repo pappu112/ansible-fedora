@@ -1,0 +1,10 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rhgb quiet"
+GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy=0 rd.lvm.lv=fedora_fedora/root console=ttyS0,115200n8"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG=true
+
