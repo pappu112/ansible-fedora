@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: minio-configmap
+data:
+  MINIO_ACCESS_KEY: "AKIA3ZTEKII42WOWS65R"
+  ##This is the aws access key
+  MINIO_SECRET_KEY: "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"
+  ##This is the aws sercter key

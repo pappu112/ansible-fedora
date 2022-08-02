@@ -1,0 +1,5 @@
+- name: install minio
+  shell: |
+    kubectl create -f minio/minio-congigmap.yaml
+    kubectl create -f minio/deployment.yaml
+    kubectl create -f minio/service.yaml
